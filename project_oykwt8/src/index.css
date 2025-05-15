@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-light text-dark;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 inline-block text-center;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-secondary;
+}
+
+.btn-secondary {
+  @apply bg-accent text-white hover:brightness-110;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-xl transform -translate-y-1;
+}
